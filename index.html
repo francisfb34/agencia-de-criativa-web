@@ -1,0 +1,460 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Agência Criativa Web - Design Digital</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Montserrat:wght@800;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="estilos.css" />
+  </head>
+  <body>
+    <!-- Cabeçalho com logo e menu de navegação -->
+    <header class="cabecalho">
+      <div class="container">
+        <div class="logo">
+          <a href="#">
+            <span class="logo-texto">Agência Criativa Web</span>
+            <span class="logo-subtexto">Design Digital</span>
+          </a>
+        </div>
+
+        <button class="menu-toggle" aria-label="Abrir menu">
+          <span class="hamburger"></span>
+        </button>
+
+        <nav class="menu-navegacao">
+          <ul>
+            <li><a href="#home" class="ativo">Home</a></li>
+            <li><a href="#sobre">Sobre Nós</a></li>
+            <li><a href="#servicos">Serviços</a></li>
+            <li><a href="#depoimentos">Depoimentos</a></li>
+            <li><a href="#contato">Contato</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <!-- Seção Home/Banner -->
+      <section id="home" class="banner">
+        <div class="container">
+          <div class="banner-conteudo">
+            <h1 class="banner-titulo">
+              Transformamos ideias em
+              <span class="destaque">realidades digitais</span>
+            </h1>
+            <p class="banner-texto">
+              Somos uma agência de design digital focada em criar soluções
+              criativas e eficazes para impulsionar o seu negócio no mundo
+              digital.
+            </p>
+            <div class="banner-botoes">
+              <a href="#servicos" class="botao primario">Nossos Serviços</a>
+              <a href="#contato" class="botao secundario">Entre em Contato</a>
+            </div>
+          </div>
+          <div class="banner-imagem">
+            <img
+              src="https://images.unsplash.com/photo-1552664730-d307ca884978?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80"
+              srcset="
+                https://images.unsplash.com/photo-1552664730-d307ca884978?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80 400w,
+                https://images.unsplash.com/photo-1552664730-d307ca884978?ixlib=rb-4.0.3&auto=format&fit=crop&w-600&q=80 600w,
+                https://images.unsplash.com/photo-1552664730-d307ca884978?ixlib=rb-4.0.3&auto=format&fit=crop&w-800&q=80 800w
+              "
+              alt="Equipe criativa trabalhando em projeto digital"
+              sizes="(max-width: 768px) 100vw, 50vw"
+            />
+          </div>
+        </div>
+      </section>
+
+      <!-- Seção Sobre Nós -->
+      <section id="sobre" class="sobre">
+        <div class="container">
+          <div class="sobre-imagem">
+            <img
+              src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80"
+              srcset="
+                https://images.unsplash.com/photo-1522071820081-009f0129c71c?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80 400w,
+                https://images.unsplash.com/photo-1522071820081-009f0129c71c?ixlib=rb-4.0.3&auto=format&fit=crop&w-600&q=80 600w
+              "
+              alt="Nossa equipe criativa"
+              sizes="(max-width: 768px) 100vw, 40vw"
+            />
+          </div>
+          <div class="sobre-conteudo">
+            <h2 class="titulo-secao">Sobre Nós</h2>
+            <p class="sobre-texto">
+              A <strong>Agência Criativa Web</strong> nasceu da paixão por
+              transformar ideias em experiências digitais memoráveis. Com mais
+              de 10 anos de mercado, nossa missão é conectar marcas ao seu
+              público através de soluções digitais inovadoras.
+            </p>
+            <p class="sobre-texto">
+              Nossa equipe multidisciplinar é composta por designers,
+              desenvolvedores e estrategistas digitais que trabalham em conjunto
+              para criar projetos que não apenas impressionam visualmente, mas
+              também geram resultados tangíveis para nossos clientes.
+            </p>
+            <div class="sobre-valores">
+              <div class="valor">
+                <i class="fas fa-lightbulb"></i>
+                <h3>Inovação</h3>
+                <p>Sempre buscamos novas tecnologias e tendências</p>
+              </div>
+              <div class="valor">
+                <i class="fas fa-handshake"></i>
+                <h3>Parceria</h3>
+                <p>Trabalhamos lado a lado com nossos clientes</p>
+              </div>
+              <div class="valor">
+                <i class="fas fa-rocket"></i>
+                <h3>Resultados</h3>
+                <p>Focamos em entregas que geram impacto real</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Seção Serviços (usando CSS Grid) -->
+      <section id="servicos" class="servicos">
+        <div class="container">
+          <h2 class="titulo-secao">Nossos Serviços</h2>
+          <p class="subtitulo-secao">
+            Oferecemos soluções completas para sua presença digital
+          </p>
+
+          <div class="servicos-grid">
+            <div class="servico-card">
+              <div class="servico-icon">
+                <i class="fas fa-paint-brush"></i>
+              </div>
+              <h3>Design Gráfico</h3>
+              <p>
+                Criamos identidades visuais marcantes, logotipos, materiais
+                impressos e digitais que comunicam a essência da sua marca.
+              </p>
+              <ul class="servico-lista">
+                <li>Identidade Visual</li>
+                <li>Materiais Promocionais</li>
+                <li>Ilustrações Customizadas</li>
+              </ul>
+            </div>
+
+            <div class="servico-card">
+              <div class="servico-icon">
+                <i class="fas fa-code"></i>
+              </div>
+              <h3>Desenvolvimento Web</h3>
+              <p>
+                Desenvolvemos sites responsivos, sistemas web e aplicações
+                personalizadas com as mais modernas tecnologias do mercado.
+              </p>
+              <ul class="servico-lista">
+                <li>Sites Responsivos</li>
+                <li>Sistemas Web</li>
+                <li>E-commerce</li>
+              </ul>
+            </div>
+
+            <div class="servico-card">
+              <div class="servico-icon">
+                <i class="fas fa-bullhorn"></i>
+              </div>
+              <h3>Branding</h3>
+              <p>
+                Construímos e posicionamos marcas fortes no mercado, criando
+                conexões emocionais com seu público-alvo.
+              </p>
+              <ul class="servico-lista">
+                <li>Posicionamento de Marca</li>
+                <li>Estratégia de Comunicação</li>
+                <li>Manual da Marca</li>
+              </ul>
+            </div>
+
+            <div class="servico-card">
+              <div class="servico-icon">
+                <i class="fas fa-shopping-cart"></i>
+              </div>
+              <h3>E-commerce</h3>
+              <p>
+                Criamos lojas virtuais completas e otimizadas para conversão,
+                integradas com os principais meios de pagamento.
+              </p>
+              <ul class="servico-lista">
+                <li>Lojas Virtuais</li>
+                <li>Integração com Pagamentos</li>
+                <li>Gestão de Produtos</li>
+              </ul>
+            </div>
+
+            <div class="servico-card">
+              <div class="servico-icon">
+                <i class="fas fa-chart-line"></i>
+              </div>
+              <h3>Marketing Digital</h3>
+              <p>
+                Desenvolvemos estratégias de marketing digital personalizadas
+                para aumentar a visibilidade e conversões da sua marca.
+              </p>
+              <ul class="servico-lista">
+                <li>Gestão de Redes Sociais</li>
+                <li>SEO e Tráfego Orgânico</li>
+                <li>Campanhas de Ads</li>
+              </ul>
+            </div>
+
+            <div class="servico-card">
+              <div class="servico-icon">
+                <i class="fas fa-mobile-alt"></i>
+              </div>
+              <h3>Apps Mobile</h3>
+              <p>
+                Desenvolvemos aplicativos móveis intuitivos e funcionais para
+                iOS e Android, focados na melhor experiência do usuário.
+              </p>
+              <ul class="servico-lista">
+                <li>Apps para iOS e Android</li>
+                <li>UI/UX Design Mobile</li>
+                <li>Manutenção e Suporte</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Seção Depoimentos -->
+      <section id="depoimentos" class="depoimentos">
+        <div class="container">
+          <h2 class="titulo-secao">O que nossos clientes dizem</h2>
+          <p class="subtitulo-secao">
+            Confira alguns depoimentos de quem já trabalhou conosco
+          </p>
+
+          <div class="depoimentos-container">
+            <div class="depoimento-card">
+              <div class="depoimento-texto">
+                <p>
+                  "A Agência Criativa Web transformou completamente nossa
+                  presença online. Nosso site agora é moderno, funcional e já
+                  gerou um aumento de 40% nas conversões."
+                </p>
+              </div>
+              <div class="depoimento-cliente">
+                <div class="cliente-info">
+                  <h4>Mariana Silva</h4>
+                  <p>CEO da TechSolutions</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="depoimento-card">
+              <div class="depoimento-texto">
+                <p>
+                  "O trabalho de branding realizado pela agência foi fundamental
+                  para reposicionarmos nossa marca no mercado. Profissionalismo
+                  e criatividade em todos os aspectos."
+                </p>
+              </div>
+              <div class="depoimento-cliente">
+                <div class="cliente-info">
+                  <h4>Carlos Mendes</h4>
+                  <p>Diretor da EcoNatural</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="depoimento-card">
+              <div class="depoimento-texto">
+                <p>
+                  "A equipe foi incrível desde o primeiro contato. Desenvolveram
+                  nosso e-commerce com toda a atenção aos detalhes que
+                  precisávamos. Super recomendo!"
+                </p>
+              </div>
+              <div class="depoimento-cliente">
+                <div class="cliente-info">
+                  <h4>Fernanda Costa</h4>
+                  <p>Fundadora da ModaFina</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Seção Contato -->
+      <section id="contato" class="contato">
+        <div class="container">
+          <h2 class="titulo-secao">Entre em Contato</h2>
+          <p class="subtitulo-secao">
+            Tem um projeto em mente? Vamos conversar!
+          </p>
+
+          <div class="contato-conteudo">
+            <div class="contato-info">
+              <div class="info-item">
+                <div class="info-icon">
+                  <i class="fas fa-map-marker-alt"></i>
+                </div>
+                <div class="info-texto">
+                  <h3>Endereço</h3>
+                  <p>
+                    Av. Paulista, 1000 - Bela Vista<br />São Paulo - SP,
+                    01310-100
+                  </p>
+                </div>
+              </div>
+
+              <div class="info-item">
+                <div class="info-icon">
+                  <i class="fas fa-phone"></i>
+                </div>
+                <div class="info-texto">
+                  <h3>Telefone</h3>
+                  <p>(11) 3456-7890</p>
+                </div>
+              </div>
+
+              <div class="info-item">
+                <div class="info-icon">
+                  <i class="fas fa-envelope"></i>
+                </div>
+                <div class="info-texto">
+                  <h3>E-mail</h3>
+                  <p>contato@agenciacriativaweb.com.br</p>
+                </div>
+              </div>
+
+              <div class="info-item">
+                <div class="info-icon">
+                  <i class="fas fa-clock"></i>
+                </div>
+                <div class="info-texto">
+                  <h3>Horário de Atendimento</h3>
+                  <p>Segunda a Sexta: 9h às 18h</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="contato-formulario">
+              <form id="form-contato">
+                <div class="form-group">
+                  <label for="nome">Nome Completo *</label>
+                  <input type="text" id="nome" name="nome" required />
+                </div>
+
+                <div class="form-group">
+                  <label for="email">E-mail *</label>
+                  <input type="email" id="email" name="email" required />
+                </div>
+
+                <div class="form-group">
+                  <label for="telefone">Telefone</label>
+                  <input type="tel" id="telefone" name="telefone" />
+                </div>
+
+                <div class="form-group">
+                  <label for="servico">Serviço de Interesse</label>
+                  <select id="servico" name="servico">
+                    <option value="">Selecione um serviço</option>
+                    <option value="design">Design Gráfico</option>
+                    <option value="desenvolvimento">Desenvolvimento Web</option>
+                    <option value="branding">Branding</option>
+                    <option value="ecommerce">E-commerce</option>
+                    <option value="marketing">Marketing Digital</option>
+                    <option value="apps">Apps Mobile</option>
+                  </select>
+                </div>
+
+                <div class="form-group">
+                  <label for="mensagem">Mensagem *</label>
+                  <textarea
+                    id="mensagem"
+                    name="mensagem"
+                    rows="5"
+                    required
+                  ></textarea>
+                </div>
+
+                <button type="submit" class="botao primario">
+                  Enviar Mensagem
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="rodape">
+      <div class="container">
+        <div class="rodape-conteudo">
+          <div class="rodape-info">
+            <div class="logo-rodape">
+              <span class="logo-texto">Agência Criativa Web</span>
+              <span class="logo-subtexto">Design Digital</span>
+            </div>
+            <p class="rodape-texto">
+              Transformando ideias em realidade digital iniciado em 2026.
+            </p>
+            <div class="rodape-social">
+              <a href="#" aria-label="Facebook"
+                ><i class="fab fa-facebook-f"></i
+              ></a>
+              <a href="#" aria-label="Instagram"
+                ><i class="fab fa-instagram"></i
+              ></a>
+              <a href="#" aria-label="LinkedIn"
+                ><i class="fab fa-linkedin-in"></i
+              ></a>
+              <a href="#" aria-label="Twitter"
+                ><i class="fab fa-twitter"></i
+              ></a>
+            </div>
+          </div>
+
+          <div class="rodape-links">
+            <h3>Links Rápidos</h3>
+            <ul>
+              <li><a href="#home">Home</a></li>
+              <li><a href="#sobre">Sobre Nós</a></li>
+              <li><a href="#servicos">Serviços</a></li>
+              <li><a href="#depoimentos">Depoimentos</a></li>
+              <li><a href="#contato">Contato</a></li>
+            </ul>
+          </div>
+
+          <div class="rodape-servicos">
+            <h3>Nossos Serviços</h3>
+            <ul>
+              <li><a href="#servicos">Design Gráfico</a></li>
+              <li><a href="#servicos">Desenvolvimento Web</a></li>
+              <li><a href="#servicos">Branding</a></li>
+              <li><a href="#servicos">E-commerce</a></li>
+              <li><a href="#servicos">Marketing Digital</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="rodape-copyright">
+          <p>
+            &copy; 2026 Agência Criativa Web ebac escola de ensino. Todos os
+            direitos reservados.
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
