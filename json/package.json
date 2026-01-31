@@ -1,0 +1,14 @@
+{
+  "name": "portfolio-profissional",
+  "version": "1.0.0",
+  "description": "Portfolio profissional com SASS",
+  "scripts": {
+    "sass:dev": "sass scss/estilos.scss css/estilos.css --style=expanded",
+    "sass:watch": "sass --watch scss:css",
+    "sass:build": "sass scss/estilos.scss css/estilos.css --style=compressed",
+    "serve": "live-server ."
+  },
+  "devDependencies": {
+    "sass": "^1.66.1"
+  }
+}

@@ -1,0 +1,65 @@
+// Mixin para responsividade
+@mixin responsivo($breakpoint) {
+  @media (max-width: $breakpoint) {
+    @content;
+  }
+}
+
+// Mixin para criar botões
+@mixin botao($cor-fundo, $cor-texto: $cor-branco, $padding: $espacamento-sm $espacamento-lg) {
+  display: inline-block;
+  background-color: $cor-fundo;
+  color: $cor-texto;
+  padding: $padding;
+  border: none;
+  border-radius: $border-radius-md;
+  font-family: $fonte-principal;
+  font-weight: 600;
+  text-decoration: none;
+  cursor: pointer;
+  transition: all $transicao-media;
+  text-align: center;
+  
+  &:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  }
+  
+  &:active {
+    transform: translateY(0);
+  }
+}
+
+// Mixin para sombras
+@mixin sombra($nivel: 1) {
+  @if $nivel == 1 {
+    box-shadow: 0 1px 3px $cor-sombra;
+  } @else if $nivel == 2 {
+    box-shadow: 0 4px 6px -1px $cor-sombra, 0 2px 4px -1px $cor-sombra;
+  } @else if $nivel == 3 {
+    box-shadow: 0 10px 15px -3px $cor-sombra, 0 4px 6px -2px $cor-sombra;
+  } @else if $nivel == 4 {
+    box-shadow: 0 20px 25px -5px $cor-sombra, 0 10px 10px -5px $cor-sombra;
+  }
+}
+
+// Mixin para flexbox
+@mixin flex($direcao: row, $justify: flex-start, $align: stretch, $wrap: nowrap) {
+  display: flex;
+  flex-direction: $direcao;
+  justify-content: $justify;
+  align-items: $align;
+  flex-wrap: $wrap;
+}
+
+// Mixin para grid
+@mixin grid($colunas: 1, $gap: $espacamento-md) {
+  display: grid;
+  grid-template-columns: repeat($colunas, 1fr);
+  gap: $gap;
+}
+
+// Mixin para gradiente
+@mixin gradiente($cor1, $cor2, $angulo: 135deg) {
+  background: linear-gradient($angulo, $cor1, $cor2);
+}

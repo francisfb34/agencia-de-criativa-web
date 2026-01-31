@@ -1,0 +1,93 @@
+// Importação dos parciais
+@use 'variaveis' as v;
+@use 'mixins' as m;
+@use 'base';
+@use 'layout';
+@use 'componentes';
+
+// Utilitários e ajustes finais
+.texto {
+  &--centro {
+    text-align: center;
+  }
+  
+  &--direita {
+    text-align: right;
+  }
+  
+  &--esquerda {
+    text-align: left;
+  }
+  
+  &--primario {
+    color: v.$cor-primaria;
+  }
+  
+  &--secundario {
+    color: v.$cor-secundaria;
+  }
+  
+  &--destaque {
+    color: v.$cor-destaque;
+  }
+  
+  &--claro {
+    color: v.$cor-texto-claro;
+  }
+  
+  &--branco {
+    color: v.$cor-branco;
+  }
+}
+
+// Espaçamentos utilitários usando operadores
+.mt {
+  &-0 { margin-top: 0 !important; }
+  &-1 { margin-top: calc(v.$espacamento-xs / 2) !important; }
+  &-2 { margin-top: v.$espacamento-xs !important; }
+  &-3 { margin-top: v.$espacamento-sm !important; }
+  &-4 { margin-top: v.$espacamento-md !important; }
+  &-5 { margin-top: v.$espacamento-lg !important; }
+  &-6 { margin-top: v.$espacamento-xl !important; }
+}
+
+.mb {
+  &-0 { margin-bottom: 0 !important; }
+  &-1 { margin-bottom: calc(v.$espacamento-xs / 2) !important; }
+  &-2 { margin-bottom: v.$espacamento-xs !important; }
+  &-3 { margin-bottom: v.$espacamento-sm !important; }
+  &-4 { margin-bottom: v.$espacamento-md !important; }
+  &-5 { margin-bottom: v.$espacamento-lg !important; }
+  &-6 { margin-bottom: v.$espacamento-xl !important; }
+}
+
+.p {
+  &-0 { padding: 0 !important; }
+  &-1 { padding: calc(v.$espacamento-xs / 2) !important; }
+  &-2 { padding: v.$espacamento-xs !important; }
+  &-3 { padding: v.$espacamento-sm !important; }
+  &-4 { padding: v.$espacamento-md !important; }
+  &-5 { padding: v.$espacamento-lg !important; }
+  &-6 { padding: v.$espacamento-xl !important; }
+}
+
+// Responsividade para utilitários
+@include m.responsivo(v.$breakpoint-md) {
+  .md\:mt {
+    &-0 { margin-top: 0 !important; }
+    &-2 { margin-top: v.$espacamento-xs !important; }
+    &-4 { margin-top: v.$espacamento-md !important; }
+  }
+  
+  .md\:mb {
+    &-0 { margin-bottom: 0 !important; }
+    &-2 { margin-bottom: v.$espacamento-xs !important; }
+    &-4 { margin-bottom: v.$espacamento-md !important; }
+  }
+  
+  .md\:texto {
+    &--centro {
+      text-align: center !important;
+    }
+  }
+}

@@ -1,0 +1,49 @@
+// Cores
+$cor-primaria: #2563eb;
+$cor-secundaria: #7c3aed;
+$cor-destaque: #f59e0b;
+$cor-texto: #1f2937;
+$cor-texto-claro: #6b7280;
+$cor-fundo: #f9fafb;
+$cor-branco: #ffffff;
+$cor-sombra: rgba(0, 0, 0, 0.1);
+$cor-sombra-escura: rgba(0, 0, 0, 0.2);
+$cor-borda: #e5e7eb;
+
+// Espaçamentos
+$espacamento-xs: 0.5rem;
+$espacamento-sm: 1rem;
+$espacamento-md: 1.5rem;
+$espacamento-lg: 2rem;
+$espacamento-xl: 3rem;
+$espacamento-xxl: 4rem;
+
+// Fontes
+$fonte-principal: 'Poppins', sans-serif;
+$fonte-secundaria: 'Montserrat', sans-serif;
+
+// Tamanhos de fonte
+$fonte-tamanho-xs: 0.875rem;
+$fonte-tamanho-sm: 1rem;
+$fonte-tamanho-md: 1.25rem;
+$fonte-tamanho-lg: 1.5rem;
+$fonte-tamanho-xl: 2rem;
+$fonte-tamanho-xxl: 2.5rem;
+$fonte-tamanho-hero: 3rem;
+
+// Border radius
+$border-radius-sm: 4px;
+$border-radius-md: 8px;
+$border-radius-lg: 12px;
+$border-radius-xl: 16px;
+
+// Transições
+$transicao-rapida: 0.2s ease;
+$transicao-media: 0.3s ease;
+$transicao-lenta: 0.5s ease;
+
+// Breakpoints
+$breakpoint-sm: 576px;
+$breakpoint-md: 768px;
+$breakpoint-lg: 992px;
+$breakpoint-xl: 1200px;

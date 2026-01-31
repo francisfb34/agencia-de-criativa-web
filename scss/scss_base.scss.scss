@@ -1,0 +1,90 @@
+// Reset básico
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: $fonte-principal;
+  color: $cor-texto;
+  background-color: $cor-fundo;
+  line-height: 1.6;
+  overflow-x: hidden;
+}
+
+// Títulos
+h1, h2, h3, h4, h5, h6 {
+  font-family: $fonte-secundaria;
+  font-weight: 700;
+  line-height: 1.2;
+  margin-bottom: calc($espacamento-md / 2);
+}
+
+h1 {
+  font-size: $fonte-tamanho-xxl;
+  
+  @include responsivo($breakpoint-md) {
+    font-size: calc($fonte-tamanho-xl * 1.2);
+  }
+}
+
+h2 {
+  font-size: $fonte-tamanho-xl;
+  
+  @include responsivo($breakpoint-md) {
+    font-size: $fonte-tamanho-lg;
+  }
+}
+
+h3 {
+  font-size: $fonte-tamanho-lg;
+}
+
+// Parágrafos e textos
+p {
+  margin-bottom: $espacamento-sm;
+  font-family: $fonte-principal;
+}
+
+// Links
+a {
+  color: $cor-primaria;
+  text-decoration: none;
+  transition: color $transicao-rapida;
+  
+  &:hover {
+    color: $cor-secundaria;
+  }
+}
+
+// Listas
+ul, ol {
+  margin-left: $espacamento-lg;
+  margin-bottom: $espacamento-sm;
+}
+
+// Imagens
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+// Container geral
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 $espacamento-md;
+  
+  @include responsivo($breakpoint-md) {
+    padding: 0 $espacamento-sm;
+  }
+}
